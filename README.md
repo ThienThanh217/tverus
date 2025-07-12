@@ -20,7 +20,7 @@
 	apt-get install nano
 	apt-get install git -y
 	apt-get install unzip
-	apt-get install p7zip-full
+	apt-get install p7zip-full -y
 2- Tải và cài đặt ứng dụng CCminer để khai thác coin:
 
 	git clone https://github.com/ThienThanh217/tverus.git
