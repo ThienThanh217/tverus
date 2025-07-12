@@ -1,0 +1,101 @@
+********************************************************************
+*** Danh Sách Lệnh cài đặt tools CCminer miner để đào coin verus ***
+********************************************************************
+*** Các lệnh phụ trợ tham khảo:
+	sudo su 
+	rm -f [Tên File Cần Xóa]
+	rm -r [Tên Thư Mục Cần Xóa]
+	mrdir [Tên Thư Mục Cần Tạo]
+	mv [Tên File Muốn Đổi] [Tên File Mới]
+	unzip -o [Ten_file.zip]
+	
+**********************************************************************************
+
+1- Tập lệnh hệ thống update:
+
+	sudo su
+	apt-get update -y 
+	apt-get upgrade -y
+	apt-get install wget 
+	apt-get install get 
+	apt-get install nano
+	apt-get install git -y
+	apt-get install unzip
+
+2- Tải và cài đặt ứng dụng CCminer để khai thác coin:
+
+	git clone https://github.com/ThienThanh217/tverus.git
+	cd tverus
+	cat ccminercpu.zip.001 ccminercpu.zip.002 ccminercpu.zip.003 > ccminercpufull.zip
+	unzip -o ccminercpufull.zip
+	chmod +x build.sh
+	chmod +x configure.sh
+	chmod +x autogen.sh
+	./build.sh
+	
+	
+3- Lênh Khai thác coin miner:
+
+	./ccminer -a verus -o pool -u diachivi.name -t cpu
+
+Ghi chú:  
+	- u (địa chỉ ví) , .name (tên worker), -t (số cpu đào) 
+
+	
+-- Lệnh khai thác cho từng máy:
+
+Máy 01: M01_S9pX
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M01_S9pX 
+
+Máy 02: M02_S9pH
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M02_S9pH 
+
+Máy 03: M03_S9pH
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M03_S9pH 
+
+Máy 04: M04_S9pX
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M04_S9pX 
+
+Máy 05: M05_S9X
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M05_S9X 
+
+Máy 06: M06_S10pT
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M06_S10pT 
+
+Máy 07: M07_N8
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M07_N8 
+
+Máy 08: M08_S8pT
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M08_S8pT 
+
+Máy 09: M09_A72017
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M09_A72017 
+
+Máy 10: M10_S9pH
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M10_S9pH 
+
+Máy 11: M11_M30s
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M11_M30s 
+
+Máy 12: M12_G2plx
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M12_G2plx 
+
+Máy 13: M13_SH701sh
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M13_SH701sh 
+
+Máy 14: M14_ZFlip1
+
+./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -t 6 -u RGNrR5q8NZoXkowVjEdvX3AtFQN6bTNZhd.M14_ZFlip1 
