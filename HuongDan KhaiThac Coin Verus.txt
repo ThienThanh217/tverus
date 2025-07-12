@@ -8,7 +8,7 @@
 	mrdir [Tên Thư Mục Cần Tạo]
 	mv [Tên File Muốn Đổi] [Tên File Mới]
 	unzip -o [Ten_file.zip]
-	
+	7z x ten_file_cua_ban.7z
 **********************************************************************************
 
 1- Tập lệnh hệ thống update:
@@ -21,13 +21,12 @@
 	apt-get install nano
 	apt-get install git -y
 	apt-get install unzip
-
+	apt-get install p7zip-full
 2- Tải và cài đặt ứng dụng CCminer để khai thác coin:
 
 	git clone https://github.com/ThienThanh217/tverus.git
 	cd tverus
-	cat ccminercpu.zip.001 ccminercpu.zip.002 ccminercpu.zip.003 > ccminercpufull.zip
-	unzip -o ccminercpufull.zip
+	7z x ccminer.7z
 	chmod +x build.sh
 	chmod +x configure.sh
 	chmod +x autogen.sh
